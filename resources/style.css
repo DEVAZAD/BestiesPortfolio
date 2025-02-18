@@ -88,16 +88,27 @@ ul {
 li {
   animation: slideLeft 1s ease 0s normal;
   animation-timeline: view();
-  animation-range: 0% cover 50%;
+  animation-range: 0% cover 40%;
 }
-.project {
-  width: 300px;
-  margin-top: 100px;
-  text-align: center;
+.work-set {
+  display: flex;
+  justify-content: space-around;
+}
+.work {
+  margin-top: 10%;
+  width: 400px;
   background: rgb(189, 115, 204);
+  border-radius: 30px;
+  animation: slideLeft 1s ease 0s normal;
+  animation-timeline: view();
+  animation-range: 0% cover 50%;
+  text-align: justify;
 }
-.project ul {
-  margin-top: 50px;
+.work h3 {
+  margin-top: 30px;
+}
+.work ul {
+  margin: 40px;
 }
 @keyframes slideLeft {
   0% {
