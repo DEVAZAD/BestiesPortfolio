@@ -93,16 +93,19 @@ ul {
 }
 
 .work li,
-.skill li {
+.skill li,
+.project p {
   animation: slideLeft 1s ease 0s normal;
   animation-timeline: view();
   animation-range: 0% cover 40%;
 }
-.work-set {
+.work-set,
+.project-set {
   display: flex;
   justify-content: space-around;
 }
-.work {
+.work,
+.project {
   margin-top: 10%;
   width: 400px;
   background: rgb(189, 115, 204);
@@ -112,10 +115,12 @@ ul {
   animation-range: 0% cover 50%;
   text-align: justify;
 }
-.work h3 {
-  margin-top: 30px;
+.work h3,
+.project h3 {
+  margin: 30px;
 }
-.work ul {
+.work ul,
+.project p {
   margin: 40px;
 }
 
