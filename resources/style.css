@@ -4,6 +4,8 @@
     rgba(255, 206, 217, 1) 0%,
     rgba(255, 185, 196, 1) 100%
   );
+  --tile-background: #ffb7c5;
+  --tile-shadow: #ff7ce3;
 }
 * {
   margin: 0;
@@ -43,6 +45,7 @@ section {
   width: 100%;
 }
 .navbar {
+  padding: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -59,7 +62,7 @@ ul {
   align-items: center;
 }
 .aboutme {
-  margin-top: -50px;
+  margin-top: -100px;
   height: 100%;
   width: auto;
   display: flex;
@@ -77,12 +80,13 @@ ul {
 .skill {
   height: 350px;
   width: 350px;
-  background: rgb(189, 115, 204);
+  background: var(--tile-background);
   border-radius: 30px;
   align-items: center;
   animation: slideLeft 1s ease 0s normal;
   animation-timeline: view();
   animation-range: 0% cover 50%;
+  box-shadow: 6px 6px 8px var(--tile-shadow);
 }
 .skill h2 {
   margin-top: 20px;
@@ -108,12 +112,13 @@ ul {
 .project {
   margin-top: 10%;
   width: 400px;
-  background: rgb(189, 115, 204);
+  background: var(--tile-background);
   border-radius: 30px;
   animation: slideLeft 1s ease 0s normal;
   animation-timeline: view();
   animation-range: 0% cover 50%;
   text-align: justify;
+  box-shadow: 6px 6px 8px var(--tile-shadow);
 }
 .work h3,
 .project h3 {
