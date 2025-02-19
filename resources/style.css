@@ -59,6 +59,7 @@ ul {
   margin-right: 15px;
 }
 .intro {
+  height: 110vh;
   align-items: center;
 }
 .aboutme {
@@ -130,8 +131,21 @@ ul {
 }
 
 .footer {
+  padding: 40px;
+  height: 50vh;
+  background: var(--background);
   text-align: left;
 }
+.icons {
+  height: 60%;
+  text-align: center;
+  margin-top: 100px;
+}
+i {
+  font-size: 42px;
+  margin: 40px;
+}
+
 @keyframes slideLeft {
   0% {
     opacity: 0;
