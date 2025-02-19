@@ -85,7 +85,8 @@ ul {
   margin-top: 70px;
 }
 
-li {
+.work li,
+.skill li {
   animation: slideLeft 1s ease 0s normal;
   animation-timeline: view();
   animation-range: 0% cover 40%;
@@ -109,6 +110,10 @@ li {
 }
 .work ul {
   margin: 40px;
+}
+
+.footer {
+  text-align: left;
 }
 @keyframes slideLeft {
   0% {
