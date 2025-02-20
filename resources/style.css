@@ -70,7 +70,11 @@ ul {
   justify-content: space-around;
   align-items: center;
 }
-
+.graphic img {
+  height: 200px;
+  width: auto;
+  border-radius: 50%;
+}
 .skill-set {
   margin-top: 15%;
   display: flex;
