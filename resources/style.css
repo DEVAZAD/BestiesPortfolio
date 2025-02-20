@@ -19,7 +19,6 @@ body {
   color: rgb(1, 29, 53);
   letter-spacing: 4px;
   line-height: 30px;
-  cursor: url(/resources/profilepic.jpg), auto;
 }
 .background {
   position: fixed;
