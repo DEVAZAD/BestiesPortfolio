@@ -12,7 +12,7 @@
   padding: 0;
 }
 body {
-  overflow-x: clip;
+  overflow-x: hidden;
   clip-path: inset(0 0 0 0);
   color: rgb(1, 29, 53);
   letter-spacing: 4px;
@@ -66,12 +66,11 @@ ul {
   margin-right: 15px;
 }
 .intro {
-  height: 110vh;
+  height: 100vh;
   align-items: center;
 }
 .aboutme {
-  margin-top: -100px;
-  height: 100%;
+  height: 70%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -131,9 +130,11 @@ ul {
   text-align: justify;
   box-shadow: 6px 6px 8px var(--tile-shadow);
 }
-.work h3,
-.project h3 {
-  margin: 30px;
+h2 {
+  margin: 50px;
+}
+h3 {
+  margin-top: 30px;
 }
 .work ul,
 .project p {
@@ -179,6 +180,9 @@ i {
   }
   .background {
     margin-top: -30%;
+  }
+  .skill ul {
+    margin-top: 0;
   }
   .navbar ul li {
     margin-right: 5px;
