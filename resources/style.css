@@ -18,6 +18,14 @@ body {
   letter-spacing: 4px;
   line-height: 30px;
 }
+.background {
+  position: fixed;
+  background: var(--background);
+  margin-top: -5%;
+  height: 105%;
+  width: 100%;
+  z-index: -1;
+}
 h1 {
   font-size: 30px;
 }
@@ -39,7 +47,6 @@ li {
 section {
   height: 100vh;
   width: auto;
-  background: var(--background);
 }
 .header {
   width: 100%;
@@ -65,7 +72,6 @@ ul {
 .aboutme {
   margin-top: -100px;
   height: 100%;
-  width: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -137,7 +143,6 @@ ul {
 .footer {
   padding: 40px;
   height: 50vh;
-  background: var(--background);
   text-align: left;
 }
 .icons {
@@ -161,13 +166,41 @@ i {
   }
 }
 
-@media screen and (max-width: 560px) {
-  body {
-    font-size: 1rem;
-    letter-spacing: 2px;
+@media screen and (max-width: 760px) {
+  section {
+    height: auto;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2,
+  h3 {
+    font-size: 1.3rem;
+  }
+  .background {
+    margin-top: -30%;
+  }
+  .navbar ul li {
+    margin-right: 5px;
   }
   .intro {
+    height: 100vh;
+  }
+  .aboutme {
+    vertical-align: middle;
     flex-direction: column-reverse;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .skill-set,
+  .work-set,
+  .project-set {
+    flex-direction: column;
+  }
+  .skill,
+  .project,
+  .work {
+    height: auto;
   }
 }
