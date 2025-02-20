@@ -24,7 +24,7 @@ body {
   position: fixed;
   background: var(--background);
   margin-top: -5%;
-  height: 105%;
+  height: 110%;
   width: 100%;
   z-index: -1;
 }
