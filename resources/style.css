@@ -197,6 +197,12 @@ i {
     align-items: center;
   }
 
+  li,
+  p,
+  a {
+    font-size: 1.3rem;
+  }
+
   .skill-set,
   .work-set,
   .project-set {
