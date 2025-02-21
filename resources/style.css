@@ -23,7 +23,7 @@ body {
 .background {
   position: fixed;
   background: var(--background);
-  margin-top: -5%;
+  margin: -5% auto 5% auto;
   height: 110%;
   width: 100%;
   z-index: -1;
