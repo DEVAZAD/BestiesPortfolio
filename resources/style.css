@@ -122,7 +122,7 @@ ul {
 }
 .work,
 .project {
-  margin-top: 10%;
+  margin-top: 8%;
   width: 400px;
   background: var(--tile-background);
   border-radius: 30px;
