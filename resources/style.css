@@ -1,8 +1,8 @@
 :root {
   --background: radial-gradient(
     circle,
-    rgba(255, 206, 217, 1) 0%,
-    rgba(255, 185, 196, 1) 100%
+    rgb(255, 234, 234) 0%,
+    rgb(255, 200, 209) 100%
   );
   --tile-background: #ffccd6;
   --tile-shadow: #ff9fcc;
