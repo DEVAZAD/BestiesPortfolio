@@ -4,8 +4,8 @@
     rgba(255, 206, 217, 1) 0%,
     rgba(255, 185, 196, 1) 100%
   );
-  --tile-background: #ffb7c5;
-  --tile-shadow: #ff7ce3;
+  --tile-background: #ffccd6;
+  --tile-shadow: #ff9fcc;
 }
 * {
   margin: 0;
@@ -23,22 +23,45 @@ body {
 .background {
   position: fixed;
   background: var(--background);
-  margin: -5% auto 5% auto;
+
+  margin-top: -5%;
   height: 110%;
   width: 100%;
   z-index: -1;
 }
-h1 {
-  font-size: 30px;
+
+.sakura-leaf {
+  position: absolute;
+  top: -10vh;
+  opacity: 0;
+  will-change: transform;
+  pointer-events: none;
+  user-select: none;
 }
-h2,
+
+@keyframes fall {
+  0% { transform: translate(0, 0) rotate(0); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translate(-60vw, 120vh) rotate(360deg); opacity: 0; }
+}
+
+
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 2.2rem;
+  text-align: center;
+}
 h3 {
-  font-size: 30px;
+  font-size: 1.6rem;
   text-align: center;
 }
 
 a {
-  font-size: 22px;
+  font-size: 1.5rem;
   text-decoration: none;
 }
 p,
