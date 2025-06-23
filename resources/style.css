@@ -15,17 +15,16 @@
 }
 body {
   overflow-x: hidden;
-  clip-path: inset(0 0 0 0);
   color: rgb(1, 29, 53);
   letter-spacing: 4px;
   line-height: 30px;
+  
 }
 .background {
   position: fixed;
   background: var(--background);
 
-  margin-top: -5%;
-  height: 110%;
+  height: 100%;
   width: 100%;
   z-index: -1;
 }
@@ -192,7 +191,8 @@ i {
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 560px) {
+  
   section {
     height: auto;
   }
@@ -203,8 +203,8 @@ i {
   h3 {
     font-size: 1.3rem;
   }
-  .background {
-    margin-top: -30%;
+ .background {
+    background-size: auto 150%;
   }
   .skill ul {
     margin-top: 0;
