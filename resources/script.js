@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         leaf.textContent = emojis[Math.floor(Math.random() * emojis.length)];
         
         // Calculate slower duration (8-18 seconds)
-        const baseDuration = 8 + Math.random() * 20;
+        const baseDuration = 8 + Math.random() * 30;
         const fontSize = 14 + Math.random() * 12; // 14-26px
         
         Object.assign(leaf.style, {
@@ -32,9 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // Create initial leaves (reduced quantity)
     for (let i = 0; i < 8; i++) {
-        setTimeout(createLeaf, i * 300); // Stagger initial creation
+        setTimeout(createLeaf, i * 30000); // Stagger initial creation
     }
     
     // Continuous animation with reduced frequency
-    setInterval(createLeaf, 1400);
+    setInterval(createLeaf, 3400);
 });
