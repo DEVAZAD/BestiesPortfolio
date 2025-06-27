@@ -13,15 +13,12 @@
     url(https://cur.cursors-4u.net/nature/nat-4/nat346.png), auto !important;
 }
 body {
-  overflow-x: hidden;
-  color: rgb(1, 29, 53);
   letter-spacing: 4px;
   line-height: 30px;
 }
 .background {
   position: fixed;
   background: var(--background);
-
   height: 100%;
   width: 100%;
   z-index: -1;
@@ -67,9 +64,9 @@ h3 {
 
 a {
   font-size: 1.5rem;
-  text-decoration: none;
+  color: black;
+  text-decoration: underline;
 }
-p,
 li {
   font-size: 22px;
 }
@@ -105,6 +102,9 @@ ul {
   justify-content: space-evenly;
   align-items: center;
 }
+.aboutme p {
+  font-size: 28px;
+}
 .graphic img {
   height: 200px;
   width: auto;
@@ -117,10 +117,9 @@ ul {
   justify-content: space-around;
   text-align: center;
 }
-.skill {
+.skill-tile {
   height: 350px;
   width: 350px;
-
   border-radius: 30px;
   align-items: center;
   animation: slideLeft 1s ease 0s normal;
@@ -128,28 +127,28 @@ ul {
   animation-range: 0% cover 50%;
   box-shadow: 6px 6px 8px var(--tile-shadow);
 }
-.skill h2 {
+.skill-tile h2 {
   margin-top: 20px;
 }
 
-.skill ul {
+.skill-tile ul {
   margin-top: 70px;
 }
 
-.work li,
-.skill li,
-.project li {
+.work-tile li,
+.skill-tile li,
+.project-tile li {
   animation: slideLeft 1s ease 0s normal;
   animation-timeline: view();
   animation-range: 0% cover 40%;
 }
-.work-set,
-.project-set {
+.work-tile-set,
+.project-tile-set {
   display: flex;
   justify-content: space-around;
 }
-.work,
-.project {
+.work-tile,
+.project-tile {
   margin-top: 8%;
   width: 40vw;
   border-radius: 30px;
@@ -159,26 +158,31 @@ ul {
   text-align: justify;
   box-shadow: 6px 6px 8px var(--tile-shadow);
 }
+
 h2 {
   margin: 50px;
 }
 h3 {
   margin-top: 30px;
 }
-.work ul,
-.project ul {
+.work-tile ul,
+.project-tile ul {
   margin: 40px;
   list-style-type: disc;
 }
 
 .footer {
+  margin-top: 10vh;
   padding: 30px;
   text-align: left;
+}
+.margin-zero {
+  margin: 0;
 }
 .icons {
   height: 45%;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 i {
   font-size: 42px;
@@ -230,13 +234,13 @@ i {
   }
 
   .skill-set,
-  .work-set,
-  .project-set {
+  .work-tile-set,
+  .project-tile-set {
     flex-direction: column;
   }
   .skill,
-  .project,
-  .work {
+  .project-tile,
+  .work-tile {
     height: auto;
   }
 }
