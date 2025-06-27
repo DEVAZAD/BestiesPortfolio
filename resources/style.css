@@ -146,7 +146,6 @@ ul {
 .project {
   margin-top: 8%;
   width: 400px;
-  background: var(--tile-background);
   border-radius: 30px;
   animation: slideLeft 1s ease 0s normal;
   animation-timeline: view();
