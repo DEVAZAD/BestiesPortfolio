@@ -4,8 +4,7 @@
     rgb(255, 234, 234) 0%,
     rgb(255, 200, 209) 100%
   );
-  --tile-background: #ffe6eb;
-  --tile-shadow: #ff9fcc;
+  --tile-shadow: #ffb3b3;
 }
 * {
   margin: 0;
@@ -114,7 +113,7 @@ ul {
 .skill {
   height: 350px;
   width: 350px;
-  background: var(--tile-background);
+
   border-radius: 30px;
   align-items: center;
   animation: slideLeft 1s ease 0s normal;
