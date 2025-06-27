@@ -17,7 +17,6 @@ body {
   color: rgb(1, 29, 53);
   letter-spacing: 4px;
   line-height: 30px;
-  
 }
 .background {
   position: fixed;
@@ -38,13 +37,21 @@ body {
 }
 
 @keyframes fall {
-  0% { transform: translate(0, 0) rotate(0); opacity: 0; }
-  10% { opacity: 1; }
-  90% { opacity: 1; }
-  100% { transform: translate(-60vw, 120vh) rotate(360deg); opacity: 0; }
+  0% {
+    transform: translate(0, 0) rotate(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-60vw, 120vh) rotate(360deg);
+    opacity: 0;
+  }
 }
-
-
 
 h1 {
   font-size: 2rem;
@@ -131,7 +138,7 @@ ul {
 
 .work li,
 .skill li,
-.project p {
+.project li {
   animation: slideLeft 1s ease 0s normal;
   animation-timeline: view();
   animation-range: 0% cover 40%;
@@ -144,7 +151,7 @@ ul {
 .work,
 .project {
   margin-top: 8%;
-  width: 400px;
+  width: 40vw;
   border-radius: 30px;
   animation: slideLeft 1s ease 0s normal;
   animation-timeline: view();
@@ -159,13 +166,13 @@ h3 {
   margin-top: 30px;
 }
 .work ul,
-.project p {
+.project ul {
   margin: 40px;
+  list-style-type: disc;
 }
 
 .footer {
   padding: 30px;
-  height: 50vh;
   text-align: left;
 }
 .icons {
@@ -181,16 +188,15 @@ i {
 @keyframes slideLeft {
   0% {
     opacity: 0;
-    transform: translateX(100vw);
+    transform: translateY(20vh);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
 @media screen and (max-width: 560px) {
-  
   section {
     height: auto;
   }
