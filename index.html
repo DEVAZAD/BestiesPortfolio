@@ -2,266 +2,394 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Kanak Singh — Portfolio</title>
+    <link rel="icon" href="resources/favicon.ico" />
     <link rel="stylesheet" href="resources/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&family=Inter:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-    <title>Kanak Singh — Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="resources/favicon.ico" />
   </head>
   <body>
-    <canvas id="sakura-canvas"></canvas>
-
-    <!-- NAVBAR -->
-    <header class="header">
-      <nav class="navbar">
-        <h1>Kanak<span class="accent"> Singh</span></h1>
-        <a class="resume-btn" href="resources/Resume.pdf" target="_blank"
+    <nav>
+      <span class="logo">Kanak Singh</span>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="resources/Resume.pdf" target="_blank" class="btn-resume"
           >Resume ↗</a
         >
-      </nav>
-    </header>
+      </div>
+    </nav>
 
     <!-- HERO -->
-    <section class="intro" id="intro">
-      <div class="intro-content">
-        <div class="intro-text">
-          <span class="greeting">Hello, I'm</span>
-          <h2 class="hero-name">Kanak Singh</h2>
-          <p class="hero-sub">Engineering Graduate &amp; Developer</p>
-          <div class="hero-links">
-            <a href="#skills" class="pill-link">Skills</a>
-            <a href="#experience" class="pill-link">Experience</a>
-            <a href="#projects" class="pill-link">Projects</a>
-          </div>
+    <section id="hero">
+      <div class="hero-img">
+        <img src="resources/profilepic.jpg" alt="Kanak Singh" />
+      </div>
+      <div class="hero-text">
+        <span class="eyebrow"
+          >B.Tech CSE · IMS Engineering College, Ghaziabad</span
+        >
+        <h1>Kanak<br /><em>Singh</em></h1>
+        <p>
+          Java developer &amp; web engineer with hands-on internship experience
+          building e-commerce portals, AI-driven tools, and responsive
+          interfaces.
+        </p>
+        <div class="hero-meta">
+          <span><i class="fa-solid fa-location-dot"></i> Gorakhpur, India</span>
+          <span><i class="fa-solid fa-graduation-cap"></i> CGPA 8.5 / 10</span>
+          <span
+            ><i class="fa-solid fa-circle available"></i> Open to
+            opportunities</span
+          >
         </div>
-        <div class="intro-image">
-          <div class="image-ring">
-            <img src="resources/profilepic.jpg" alt="Kanak Singh" />
-          </div>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="mailto:kanaksingh7209@gmail.com" class="btn-ghost"
+            >Get in Touch</a
+          >
         </div>
       </div>
-      <div class="scroll-hint">
-        <span></span>
-        <p>scroll</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="wrap two-col">
+        <div>
+          <span class="eyebrow">About Me</span>
+          <h2>Building things<br />that work <em>well</em></h2>
+          <p>
+            I'm a Computer Science graduate passionate about building clean,
+            functional software — from backend systems and databases to polished
+            web interfaces. I've completed two internships and delivered four
+            independent projects spanning AI, e-commerce, and game development.
+          </p>
+          <p>
+            Beyond code, I'm a trained dancer, avid diary writer, and music
+            lover across multiple languages. I volunteered at
+            <em>Ummeedon Ke Pankh</em> NGO, contributing to community welfare
+            initiatives.
+          </p>
+        </div>
+        <div class="stat-grid">
+          <div class="stat"><strong>8.5</strong><span>CGPA</span></div>
+          <div class="stat"><strong>2</strong><span>Internships</span></div>
+          <div class="stat"><strong>4+</strong><span>Projects</span></div>
+          <div class="stat"><strong>2024</strong><span>Graduate</span></div>
+        </div>
       </div>
     </section>
 
     <!-- SKILLS -->
-    <section class="skills section-pad" id="skills">
-      <div class="section-header">
-        <span class="section-tag">What I know</span>
-        <h2>Skills</h2>
-      </div>
-      <div class="skill-set">
-        <div class="skill-tile reveal">
-          <div class="tile-icon">⌨️</div>
-          <h3>Programming</h3>
-          <ul>
-            <li>Java</li>
-            <li>Data Structures &amp; Algorithms</li>
-            <li>Object-Oriented Programming</li>
-          </ul>
-        </div>
-        <div class="skill-tile reveal">
-          <div class="tile-icon">🌐</div>
-          <h3>Web Development</h3>
-          <ul>
-            <li>HTML &amp; CSS</li>
-            <li>Bootstrap</li>
-            <li>Node.js</li>
-            <li>PHP</li>
-          </ul>
-        </div>
-        <div class="skill-tile reveal">
-          <div class="tile-icon">🗄️</div>
-          <h3>Database &amp; Tools</h3>
-          <ul>
-            <li>SQL / MySQL</li>
-            <li>Git &amp; GitHub</li>
-          </ul>
-        </div>
-        <div class="skill-tile reveal">
-          <div class="tile-icon">💡</div>
-          <h3>Soft Skills</h3>
-          <ul>
-            <li>Problem Solving</li>
-            <li>Time Management</li>
-            <li>Leadership</li>
-            <li>Communication</li>
-          </ul>
+    <section id="skills" class="alt">
+      <div class="wrap">
+        <span class="eyebrow">What I know</span>
+        <h2>Skills &amp; <em>Expertise</em></h2>
+        <div class="skills-grid">
+          <div class="card reveal">
+            <h3>Programming</h3>
+            <ul>
+              <li>Java</li>
+              <li>Data Structures &amp; Algorithms</li>
+              <li>Object-Oriented Programming</li>
+            </ul>
+          </div>
+          <div class="card reveal">
+            <h3>Web Development</h3>
+            <ul>
+              <li>HTML &amp; CSS</li>
+              <li>Bootstrap</li>
+              <li>Node.js</li>
+              <li>PHP</li>
+            </ul>
+          </div>
+          <div class="card reveal">
+            <h3>Database &amp; Tools</h3>
+            <ul>
+              <li>SQL</li>
+              <li>Git &amp; GitHub</li>
+            </ul>
+          </div>
+          <div class="card reveal">
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>Problem Solving</li>
+              <li>Time Management</li>
+              <li>Leadership</li>
+              <li>Communication</li>
+              <li>Analytical Thinking</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- EXPERIENCE -->
-    <section class="experience section-pad" id="experience">
-      <div class="section-header">
-        <span class="section-tag">Where I've worked</span>
-        <h2>Experience</h2>
-      </div>
-      <div class="timeline">
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="work-card">
-            <span class="company-tag">IT NUCLEUS</span>
-            <h3>Software Developer Trainee</h3>
-            <ul>
-              <li>
-                Developed and integrated e-commerce web portals using PHP.
-              </li>
-              <li>
-                Implemented secure user authentication systems and optimized
-                login functionalities.
-              </li>
-              <li>
-                Debugged and resolved code issues, enhancing application
-                performance and reliability.
-              </li>
-            </ul>
+    <section id="experience">
+      <div class="wrap">
+        <span class="eyebrow">Where I've worked</span>
+        <h2>Work <em>Experience</em></h2>
+        <div class="timeline">
+          <div class="t-item reveal">
+            <div class="t-dot"></div>
+            <div class="card">
+              <span class="tag">IT Nucleus</span>
+              <h3>Software Developer Trainee</h3>
+              <p class="period">
+                <i class="fa-regular fa-calendar"></i> Jul – Aug 2023
+                &nbsp;·&nbsp; On-site
+              </p>
+              <ul>
+                <li>
+                  Developed and integrated e-commerce web portals using PHP.
+                </li>
+                <li>
+                  Implemented secure user authentication systems and optimised
+                  login functionalities.
+                </li>
+                <li>
+                  Debugged and resolved code issues, enhancing application
+                  performance and reliability.
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="work-card">
-            <span class="company-tag">CODE CLAUSE</span>
-            <h3>Web Development Intern</h3>
-            <ul>
-              <li>
-                Designed and deployed responsive web projects using HTML, CSS,
-                and JavaScript.
-              </li>
-              <li>
-                Collaborated on code repositories using Git for version control
-                and teamwork.
-              </li>
-              <li>
-                Improved website usability by applying modern web development
-                practices.
-              </li>
-            </ul>
+          <div class="t-item reveal">
+            <div class="t-dot"></div>
+            <div class="card">
+              <span class="tag">Code Clause</span>
+              <h3>Web Development Intern</h3>
+              <p class="period">
+                <i class="fa-regular fa-calendar"></i> May – Jun 2023
+                &nbsp;·&nbsp; Remote
+              </p>
+              <ul>
+                <li>
+                  Designed and deployed responsive web projects using HTML, CSS,
+                  and JavaScript.
+                </li>
+                <li>
+                  Collaborated on code repositories using Git for version
+                  control and teamwork.
+                </li>
+                <li>
+                  Improved website usability by applying modern web development
+                  practices.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- PROJECTS -->
-    <section class="projects section-pad" id="projects">
-      <div class="section-header">
-        <span class="section-tag">What I've built</span>
-        <h2>Projects</h2>
-      </div>
-      <div class="project-grid">
-        <div class="project-card reveal">
-          <div class="project-number">01</div>
-          <h3>Gesture Navigator</h3>
-          <p class="project-sub">AI-Based Virtual Mouse</p>
-          <ul>
-            <li>
-              Created a virtual cursor control system using hand gestures for
-              left-click, right-click, and cursor movement.
-            </li>
-            <li>
-              Integrated MediaPipe, OpenCV, TensorFlow, and Python for gesture
-              recognition with a voice-to-text converter.
-            </li>
-          </ul>
-          <div class="project-tags">
-            <span>Python</span><span>TensorFlow</span><span>OpenCV</span
-            ><span>MediaPipe</span>
+    <section id="projects" class="alt">
+      <div class="wrap">
+        <span class="eyebrow">What I've built</span>
+        <h2>Featured <em>Projects</em></h2>
+        <div class="proj-grid">
+          <div class="card proj reveal">
+            <span class="proj-num">01</span>
+            <h3>Gesture Navigator</h3>
+            <p class="proj-sub">AI-Based Virtual Mouse</p>
+            <p>
+              Virtual cursor control via hand gestures — left-click,
+              right-click, and full cursor movement with no physical mouse
+              required.
+            </p>
+            <ul>
+              <li>
+                Integrated MediaPipe, OpenCV &amp; TensorFlow for real-time
+                gesture recognition.
+              </li>
+              <li>
+                Added voice-to-text converter for seamless hands-free
+                interaction.
+              </li>
+            </ul>
+            <div class="tags">
+              <span>Python</span><span>TensorFlow</span><span>OpenCV</span
+              ><span>MediaPipe</span>
+            </div>
           </div>
-        </div>
-        <div class="project-card reveal">
-          <div class="project-number">02</div>
-          <h3>msonstore.com</h3>
-          <p class="project-sub">Ecommerce Website Portal</p>
-          <ul>
-            <li>
-              Developed a fully functional e-commerce website with a robust
-              database using PHP and MySQL.
-            </li>
-            <li>
-              Debugged and resolved errors, ensuring smooth performance and
-              user-friendly navigation.
-            </li>
-          </ul>
-          <div class="project-tags">
-            <span>PHP</span><span>MySQL</span><span>HTML/CSS</span>
+          <div class="card proj reveal">
+            <span class="proj-num">02</span>
+            <h3>msonstore.com</h3>
+            <p class="proj-sub">E-Commerce Web Portal</p>
+            <p>
+              Fully functional e-commerce platform with product listings, cart,
+              and admin management built from the ground up.
+            </p>
+            <ul>
+              <li>
+                Built with PHP and MySQL with a robust relational database
+                schema.
+              </li>
+              <li>
+                Debugged and resolved errors ensuring smooth performance and
+                user-friendly navigation.
+              </li>
+            </ul>
+            <div class="tags">
+              <span>PHP</span><span>MySQL</span><span>HTML/CSS</span>
+            </div>
           </div>
-        </div>
-        <div class="project-card reveal">
-          <div class="project-number">03</div>
-          <h3>ATM Simulator</h3>
-          <p class="project-sub">ATM Machine Simulation</p>
-          <ul>
-            <li>
-              Designed a system to simulate real-world ATM functionalities using
-              Java and OOP concepts.
-            </li>
-            <li>
-              Utilized classes, objects, attributes, and methods to define and
-              structure the project effectively.
-            </li>
-          </ul>
-          <div class="project-tags"><span>Java</span><span>OOP</span></div>
-        </div>
-        <div class="project-card reveal">
-          <div class="project-number">04</div>
-          <h3>Tic Tac Toe</h3>
-          <p class="project-sub">Interactive Strategy Game</p>
-          <ul>
-            <li>
-              Developed an interactive X and O game where two players compete to
-              align marks in any direction.
-            </li>
-            <li>
-              Implemented the game logic using Java to ensure smooth
-              functionality and user experience.
-            </li>
-          </ul>
-          <div class="project-tags">
-            <span>Java</span><span>Game Logic</span>
+          <div class="card proj reveal">
+            <span class="proj-num">03</span>
+            <h3>ATM Simulator</h3>
+            <p class="proj-sub">Java OOP Project</p>
+            <p>
+              Simulates real-world ATM operations — balance inquiry, deposits,
+              withdrawals, and PIN validation in pure Java.
+            </p>
+            <ul>
+              <li>
+                Used classes, objects, attributes, and methods to define and
+                structure the project.
+              </li>
+              <li>
+                Modular OOP design allows easy extension for additional banking
+                features.
+              </li>
+            </ul>
+            <div class="tags"><span>Java</span><span>OOP</span></div>
+          </div>
+          <div class="card proj reveal">
+            <span class="proj-num">04</span>
+            <h3>Tic Tac Toe</h3>
+            <p class="proj-sub">Interactive Game in Java</p>
+            <p>
+              Two-player strategy game with complete win-detection across all
+              rows, columns, and diagonals.
+            </p>
+            <ul>
+              <li>
+                Implemented full game logic with input validation and replay
+                support.
+              </li>
+              <li>Structured for readability using Java best practices.</li>
+            </ul>
+            <div class="tags"><span>Java</span><span>Game Logic</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FOOTER / CONTACT -->
-    <footer class="footer" id="contact">
-      <div class="footer-inner">
-        <h2>Let's Connect</h2>
-        <p class="footer-sub">
-          Open to opportunities — feel free to reach out!
+    <!-- EDUCATION -->
+    <section id="education">
+      <div class="wrap">
+        <span class="eyebrow">Academic Background</span>
+        <h2>Education &amp; <em>Qualifications</em></h2>
+        <div class="edu-list">
+          <div class="card edu reveal">
+            <div class="edu-icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div>
+              <span class="tag">2020 – 2024</span>
+              <h3>
+                Bachelor of Technology — Computer Science &amp; Engineering
+              </h3>
+              <p>IMS Engineering College, Ghaziabad, India</p>
+              <p class="edu-score">CGPA &nbsp;<strong>8.5 / 10</strong></p>
+            </div>
+          </div>
+          <div class="card edu reveal">
+            <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+            <div>
+              <span class="tag">2019 – 2020</span>
+              <h3>Intermediate (Class XII)</h3>
+              <p>The Pillars Public School, Gorakhpur, India</p>
+              <p class="edu-score">Percentage &nbsp;<strong>79.2%</strong></p>
+            </div>
+          </div>
+          <div class="card edu reveal">
+            <div class="edu-icon"><i class="fa-solid fa-book"></i></div>
+            <div>
+              <span class="tag">2017 – 2018</span>
+              <h3>High School (Class X)</h3>
+              <p>Naval's National Academy, Gorakhpur, India</p>
+              <p class="edu-score">Percentage &nbsp;<strong>83.0%</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXTRA-CURRICULAR -->
+    <section id="extra" class="alt">
+      <div class="wrap">
+        <span class="eyebrow">Beyond the Code</span>
+        <h2>Achievements &amp; <em>Activities</em></h2>
+        <div class="extra-grid">
+          <div class="card extra-card reveal">
+            <i class="fa-solid fa-certificate"></i>
+            <p>
+              Completed a training on <strong>Employability Skills</strong> from
+              TPC Global.
+            </p>
+          </div>
+          <div class="card extra-card reveal">
+            <i class="fa-brands fa-java"></i>
+            <p>
+              Earned a certificate in <strong>Java Programming</strong> from
+              Great Learning.
+            </p>
+          </div>
+          <div class="card extra-card reveal">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+            <p>
+              Volunteered at <strong>Ummeedon Ke Pankh</strong> NGO,
+              contributing to community welfare initiatives.
+            </p>
+          </div>
+          <div class="card extra-card reveal">
+            <i class="fa-solid fa-music"></i>
+            <p>
+              Passionate about <strong>Dancing</strong>, Diary Writing, and
+              Music in multiple languages.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+      <div class="wrap">
+        <span class="eyebrow">Get in touch</span>
+        <h2>Let's <em>Connect</em></h2>
+        <p>
+          Open to full-time roles, internships, and interesting collaborations.
         </p>
         <div class="contact-links">
+          <a href="mailto:kanaksingh7209@gmail.com"
+            ><i class="fa-solid fa-envelope"></i
+            ><span>kanaksingh7209@gmail.com</span></a
+          >
           <a
             href="https://www.linkedin.com/in/kanak-singh-2aa60a22a/"
             target="_blank"
-            aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin"></i
+            ><span>linkedin.com/in/kanak-singh</span></a
           >
-            <i class="fa-brands fa-linkedin"></i>
-            <span>LinkedIn</span>
-          </a>
-          <a href="mailto:kanaksingh7209@gmail.com" aria-label="Email">
-            <i class="fa-solid fa-envelope"></i>
-            <span>Email</span>
-          </a>
-          <a
-            href="https://github.com/Kanak1224"
-            target="_blank"
-            aria-label="GitHub"
+          <a href="https://github.com/Kanak1224" target="_blank"
+            ><i class="fa-brands fa-github"></i
+            ><span>github.com/Kanak1224</span></a
           >
-            <i class="fa-brands fa-github"></i>
-            <span>GitHub</span>
-          </a>
         </div>
-        <p class="copyright">© 2024 Kanak Singh. All rights reserved.</p>
+        <p class="copy">© 2024 Kanak Singh</p>
       </div>
     </footer>
 
